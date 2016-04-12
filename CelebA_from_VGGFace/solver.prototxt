@@ -12,6 +12,6 @@ max_iter: 200000
 momentum: 0.9
 weight_decay: 0.0005
 snapshot: 50000
-snapshot_prefix: "model2"
+snapshot_prefix: "model"
 # uncomment the following to default to CPU mode solving
 # solver_mode: CPU

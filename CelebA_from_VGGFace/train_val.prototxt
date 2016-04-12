@@ -9,7 +9,7 @@ layer {
   }
   transform_param {
     mirror: true
-    #crop_size: 224
+    crop_size: 224
     mean_value: 93.5940 
     mean_value: 104.7624 
     mean_value: 129.1863
@@ -18,8 +18,8 @@ layer {
     root_folder: "/home/yiliny1/faceAttributes/img_align_celeba/"
     source: "/home/yiliny1/faceAttributes/CelebA_from_VGGFace/TrainLabels.txt"
     batch_size: 50
-    new_height: 224
-    new_width: 224
+    new_height: 256
+    new_width: 256
     shuffle: true
     label_num: 40
   }
@@ -474,11 +474,11 @@ layer {
   name: "fc8_CelebA"
   type: "InnerProduct"
   param {
-    lr_mult: 1
+    lr_mult: 10
     decay_mult: 1
   }
   param {
-    lr_mult: 2
+    lr_mult: 20
     decay_mult: 0
   }
   inner_product_param {
