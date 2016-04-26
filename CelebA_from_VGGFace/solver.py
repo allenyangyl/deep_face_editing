@@ -19,7 +19,7 @@ solver.net.copy_from('/home/yiliny1/faceAttributes/vgg_face_caffe/VGG_FACE.caffe
 niter = 200000
 train_loss = np.zeros(niter)
 
-f = open('loss2.txt', 'w')
+f = open('loss.txt', 'w')
 
 for it in range(niter): 
     solver.step(1)
